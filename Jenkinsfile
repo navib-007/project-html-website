@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Cloning the Github Data'
                 
-                git ''
+                git 'https://github.com/navib-007/project-html-website.git'
                 
                 sh 'ls'
             }
@@ -27,7 +27,7 @@ pipeline {
         stage('testing container app') {
             steps {
                 echo 'testing container health page with curl'
-                sh 'curl -f http://localhost:5555/health.html'
+                sh 'curl -f http://localhost:2076/health.html'
             }
             
         }
