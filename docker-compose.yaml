@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  ashu-ui-app:
+    image: navi-test:v$BUILD_NUMBER
+    build: .
+    container_name: navi-c1
+    ports:
+    - 2077:80
